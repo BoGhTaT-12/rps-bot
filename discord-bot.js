@@ -15,7 +15,7 @@ const client = new Client({
 });
 
 // Initialize SQLite database
-const db = new Database('leaderboard.db');
+const db = new Database('/var/data/leaderboard.db');
 
 // Create leaderboard table if it doesn’t exist
 db.prepare(`
